@@ -1,0 +1,292 @@
+body, html {
+    background:url('green.jpg');
+    background-size: cover;
+    font-family: monospace;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    color: white;
+    font-size: x-large;
+  }
+  
+  header {
+      height: auto;
+  }
+  
+  nav {
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box;
+      padding: 8px 16px;
+      justify-content: space-around;
+      font-family: monospace;
+      font-size: x-large;
+      height: 80px;
+      align-items: center;
+  }
+  
+  
+  nav a{
+      text-decoration: none;
+      color: rgb(245, 229, 189);
+  }
+  a[active] {
+      font-weight: bold;
+      color: #f3e8e9;
+  }
+  
+  a:hover{
+    color: #220205;
+    text-decoration: non;
+  }
+  
+  @import url('https://fonts.google.com/specimen/La+Belle+Aurore');
+  h1 {
+      text-align: center;
+      font-family:'monospace';
+      font-size: 30px;
+      color:rgb(245, 229, 189);
+      text-shadow: 1px 1px goldenrod;
+  }
+  
+  h2 {
+      color: white;
+      text-align: center;
+      font-size: inherit;
+  }
+
+ p{
+   margin-left: 25px; 
+  }
+  
+  input {
+      border-radius: 4px;
+      border: 2px solid #e2e2e2;
+      padding: 8px 16px;
+      font-size: larger;
+      margin: 4px 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  
+  input#submit {
+      background: #a3d0e6;
+      color: #133049;
+      border: 0;
+      border-radius: 24px;
+      font-weight: bold;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      cursor: pointer;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 0 24px;
+      position: relative;
+      max-width: 400px;
+  }
+    
+  
+  main {
+      
+      
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .style{
+    text-align: center;
+  }
+  .commentaire{
+    text-align: center;
+  }
+  
+  .err-msg {
+      font-weight: bold;
+      text-align: center;
+      color: red;
+      width: 100%;
+  }
+  .success-msg {
+      font-weight: bold;
+      text-align: center;
+      color: rgb(3, 96, 9);
+      width: 100%;
+  }
+  
+
+  
+  
+  footer {
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+  }
+  
+  footer a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  footer a:hover {
+      color: rgb(207, 86, 86);
+  }
+  
+
+  .controls {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 12px;
+    background: rgb(50 182 79 / 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .controls a {
+    margin: 0 12px;
+}
+
+.controls button {
+    font-size: large;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+
+
+/* TABLE STYLES */
+
+table {
+    width: 90%;
+    margin: 24px auto;
+    height: auto;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: left;
+    pointer-events: none;
+}
+
+thead td {
+    height: 48px;
+    font-size: large;
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+tbody {}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+tr td:first-child {
+    background: none;
+    background: white;
+    color: black;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: 1px dashed;
+    height: 100px;
+    background: rgb(14 20 18 / 50%);
+    user-select: none;
+    position: relative;
+}
+
+td a {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkgreen;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+
+td p {
+    margin: 0;
+}
+
+td a:hover {
+    color: white;
+    background: rgb(0, 37, 0);
+}
+
+td[active] {
+    background: darkred;
+    color: white;
+}
+
+td[disabled] {
+    background: gray;
+    pointer-events: none;
+    text-align: center;
+    color: #d2d2d2;
+    font-size: 14px;
+}
+
+
+
+table span.login {
+    color: cyan;
+    font-size: smaller;
+}
+
+a.empty-res {
+    opacity: 0.5;
+    background: transparent;
+    color: white;
+}
+
+a.empty-res:hover {
+    background: #427c4270;
+    opacity: 1;
+}
