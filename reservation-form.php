@@ -14,7 +14,7 @@ $maxDate = date($dateFormat, strtotime('+1 year'));
 // date_default_timezone_set('Europe/Paris');
 // echo date('Y-m-d H:i:s');
 
-echo date('D', strtotime('2022-12-25'));
+//echo date('D', strtotime('2022-12-25'));
 
 
     if(isset($_POST['envoi'])){

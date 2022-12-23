@@ -17,9 +17,9 @@ $viewdb->execute();
 
 $res = $viewdb->fetchAll(PDO::FETCH_ASSOC);
 
-        //$today = date('Y-m-d'); //return eg. '2022-12-17' 
+//$today = date('Y-m-d'); //return eg. '2022-12-17' 
 
-var_dump($res);
+//var_dump($res);
 ?>
 
 <!DOCTYPE html>

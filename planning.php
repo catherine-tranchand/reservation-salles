@@ -1,7 +1,14 @@
 <?php
 
 session_start();
+
 include('config.php');
+
+
+
+
+    
+
 
 // $timezone = new DateTimeZone('Europe/Paris');
 // $date = new DateTime("now", $timezone);
@@ -191,6 +198,8 @@ function getReservationByDate($datetime, $reservations) {
 </head> 
     <title>Planning</title>
 </head>
+
+<?php include('header.php');?>
 
 <body>
 
