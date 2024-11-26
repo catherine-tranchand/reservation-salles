@@ -1,4 +1,4 @@
-name: github actions ci/cd
+name: reservation-salles
 on: workflow_dispatch
 jobs:
   print:
@@ -6,4 +6,12 @@ jobs:
     steps: 
       - name: Print in console
         run: echo Hello GitHub Actions
+  php-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: chechout reservation-salles code
+        uses: actions/checkout@v4
+        with: 
+            repository: catherine-tranchand/reservation-salles
+            path: reservation-salles
   
